@@ -17,7 +17,13 @@ there's probably a better way to update to newer xml parser and use strftime for
 
 The original author's site https://www.open-tickr.net/
 
-how to build: 
+Getting Started: 
+
+1. clone this git repository `git clone git@github.com:azeemh/tickr.git`
+2. change directory into the folder: `cd tickr`
+3. Build using the appropriate instructions below for your operating system. 
+
+(sudo make uninstall and sudo make clean are handy to know)
 
 `https://www.open-tickr.net/help.php`
 
