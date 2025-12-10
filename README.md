@@ -22,7 +22,7 @@ The original author's site https://www.open-tickr.net/
 1. clone this git repository `git clone git@github.com:azeemh/tickr.git`
 2. change directory into the folder: `cd tickr`
 3. Build using the appropriate instructions below for your operating system.
-4. Run the program. Just type `tickr` to run the program.
+4. Run the program. Just type `tickr` in cli from any dir to run the program.
 
 (sudo make uninstall and sudo make clean are handy to know)
 
