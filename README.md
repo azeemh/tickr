@@ -21,7 +21,7 @@ how to build:
 
 
 
-## From the OG
+## How To Build
 Known issues in last stable version (0.7.1)
 - Still no Win64 binaries available at the moment.
 
@@ -137,7 +137,7 @@ There is a sample list of already subscribed feeds that you can use.
 
 - ctrl+A to open the 'About' window and the License window.
 
-FAQ
+## FAQ
 Q: Is there any way to reduce the cpu load ?
 
 A: The cpu load comes mainly from fully redrawing the ticker area at regular time intervals, so to reduce this load, you may adjust some settings: try increasing both delay and shift size (eg delay = 32 and shift size = 4.) But scrolling will get less smooth.
@@ -205,73 +205,3 @@ On Linux:
 You can then set up separately feeds and preferences for each instance. After that, use a launcher that will run the script.
 On Windows, you should use a batch file instead and a different path.
 (Note: This question has also been discussed on askubuntu.com.)
-
-
-
-
-
-
-
-
-
-
-
-1 - BUILDING TICKR FROM SOURCES
-
-on Linux
---------
-
-Required packages are GTK+2, Libxml2 and GNUTls (development ones.) Then do:
-
-./configure
-make
-(sudo) make install
-(make clean)
-
-
-on Windows
-----------
-
-You will have to install MinGW and GTK development stuff (headers and libs.) You will also need inno setup and reshacker (reshacker.exe must be installed in /usr/local/ResHack/.)
-
-If you want to use autotools, you will have to hack a little bit and re-create your own Makefile.am and configure.ac. Those provided are ok for ***Linux only*** at the moment.
-
-So, instead of autotools, I use a script (build-on-win32) which works fine for me on XP. You will have to adapt it to your build system, at least replacing "manutm" by your user name (I'm working on improving this script.)
-
-You must also download gtk2-win32-runtime-bin.tar.gz (from www.open-tickr.net), the GTK stack runtime which includes a patched version of glib. (Of course, you may too get glib-2.26.0 sources, apply the patch, compile it yourself then add it to the GTK runtime stack you will have to build. Visit www.gtk.org for more info.)
-
-Copy gtk-win32-full-runtime under tickr-<version_num> and run:
-
-`./build-on-win32`
-
-(it will build the win32 installer.)
-
-
-2 - INSTALL DIRS DEFINED IN
-
-- tickr.desktop
-- debian/install
-- debian/menu
-- src/tickr/tickr.h
-- src/tickr/Makefile.am
-
-
-3 - APPLICATION NAME
-
-source/binary package name and command
-
-previous name:			news
-last stable version:		0.5.2
-
-new name:			tickr
-first released version:		0.5.3
-
-in src/tickr: all source files have now been renamed:
-news_*.c/h -> tickr_*/c/h
-
-app name and dirs are all (?) defined in tickr.h (at least they should be)
-
-
-4 - WIDGETS PACKING
-
-see: doc/widgets_packing
