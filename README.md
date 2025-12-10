@@ -11,6 +11,8 @@ html entity filtering handles most things libxml2 was missing (named entities).
 
 the change in length of the window from 9:50 AM to 10:00 AM because of the extra integer in the hour would force the tickr offscreen. By forcing 0 padding in the date it will say Wed Dec 01 instead of Wed Dec 1, and 09:30 PM instead 9:30 PM etc. This gives you a consistent ticker year round for a stable broadcast layout consistency... (I like to line up my logo with the "|" separating the clock from the ticker feed.)
 
+#### Pro Tip: use a monotype font for consistent glyph spacing
+
 there's probably a better way to update to newer xml parser and use strftime for the clock for uniformity and aesthetic consistency, but I'm sure the original author knows better. I'm just a guy sharing a fix that works that I compiled and use on my own machine.
 
 The original author's site https://www.open-tickr.net/
