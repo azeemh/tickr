@@ -13,15 +13,16 @@ the change in length of the window from 9:50 AM to 10:00 AM because of the extra
 
 #### Pro Tip: use a monotype font for consistent glyph spacing
 
-there's probably a better way to update to newer xml parser and use strftime for the clock for uniformity and aesthetic consistency, but I'm sure the original author knows better. I'm just a guy sharing a fix that works that I compiled and use on my own machine.
+there's probably a better way to update to newer xml parser and use strftime for the clock for uniformity and aesthetic consistency, but I'm sure the original author knows better. I'm just a guy sharing a fix that works that I compiled and use on my own ubuntu 24 machine.
 
 The original author's site https://www.open-tickr.net/
 
-Getting Started: 
+# Getting Started: 
 
 1. clone this git repository `git clone git@github.com:azeemh/tickr.git`
 2. change directory into the folder: `cd tickr`
-3. Build using the appropriate instructions below for your operating system. 
+3. Build using the appropriate instructions below for your operating system.
+4. Run the program. Just type `tickr` to run the program.
 
 (sudo make uninstall and sudo make clean are handy to know)
 
