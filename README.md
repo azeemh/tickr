@@ -57,6 +57,12 @@ On Debian/Ubuntu:
     sudo make install
     (make clean)
 ```
+#### update from azeem: 
+```
+     sudo apt-get install libcanberra-gtk-module
+``` 
+
+This isn't required to run the program or use it but it will make it easier and remove any errors like: `Gtk-Message: 08:26:57.272: Failed to load module "canberra-gtk-module"`
 
 On Fedora:
 
