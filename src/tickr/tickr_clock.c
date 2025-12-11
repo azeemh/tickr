@@ -314,7 +314,8 @@ int get_clock_width(const Params *prm)
 			if (atoi(tmp) > 9)
 				hour_is_double_digit = TRUE;
 			else
-				hour_is_double_digit = FALSE;
+				//hour_is_double_digit = FALSE;
+				hour_is_double_digit = TRUE;
 
 			layout_max_width = 0;
 			for (i = '0'; i <= '9'; i++) {
