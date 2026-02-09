@@ -4,6 +4,7 @@ Hi Azeem here!
 
 - I also re-added 0 padding on date and hour so the length is consistent. 
 
+- Changed the Window Title Convention and removed dynamic title based on current feed because OBS sometimes loses track if the title of the window changes. Now the title of the program is stable for window capture on obs in linux. 
 
 context: I use Tickr in a broadcast as a video source in OBS with RSS feeds.
 
