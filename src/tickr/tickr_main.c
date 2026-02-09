@@ -966,7 +966,7 @@ static int compute_surface_and_win()
 	 * Win stuff
 	 */
 	/* Title */
-	gtk_window_set_title(GTK_WINDOW(env->win), get_win_title_text());
+	gtk_window_set_title(GTK_WINDOW(env->win), "Tickr");
 	/*
 	 * The following code needs to be run:
 	 * - twice at program startup (ie once after gtk_widget_show_all() has been called)
